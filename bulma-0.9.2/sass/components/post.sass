@@ -1,0 +1,79 @@
+@import "../utilities/mixins"
+
+// 文章摘要列表变量
+$post-summary-list-color: $text !default
+$post-summary-list-background-color: $scheme-main !default
+
+// 文章摘要变量
+$post-summary-color: $text !default
+$post-summary-background-color: $scheme-main !default
+$post-summary-radius: 0.25rem !default
+$post-summary-padding: 1.5rem 0 !default
+
+// 摘要图片变量
+$summary-image-padding: 0 0 0.75rem !default
+
+// 摘要标题变量
+$summary-title-color: $text-strong !default
+$summary-title-background-color: transparent !default
+$summary-title-padding: 0.75rem 0 !default
+
+// 摘要元数据变量
+$summary-meta-background-color: transparent !default
+$summary-meta-padding: 0.75rem 0 !default
+
+// 摘要内容变量
+$summary-content-background-color: transparent !default
+$summary-content-padding: 0.75rem 0 !default
+
+// 文章摘要列表样式
+.post-summary-list
+  background-color: $post-summary-list-background-color
+  color: $post-summary-list-color
+  width: 677px
+  height: auto
+  margin: 0 auto
+
+// 文章摘要样式
+.post-summary
+  background-color: $post-summary-background-color
+  border-radius: $post-summary-radius
+  color: $post-summary-color
+  max-width: 100%
+  position: relative
+  padding: $post-summary-padding
+
+// 摘要图片样式
+.summary-image
+  display: block
+  position: relative
+  padding: $summary-image-padding
+  &:first-child
+    img
+      border-top-left-radius: $post-summary-radius
+      border-top-right-radius: $post-summary-radius
+  &:last-child
+    img
+      border-bottom-left-radius: $post-summary-radius
+      border-bottom-right-radius: $post-summary-radius
+
+// 摘要标题样式
+.summary-title
+  background-color: $summary-title-background-color
+  color: $summary-title-color
+  padding: $summary-title-padding
+
+// 摘要元数据样式，如时间、作者、字数、预计阅读时长等信息
+.summary-meta
+  background-color: $summary-meta-background-color
+  padding: $summary-meta-padding
+
+// 摘要内容样式
+.summary-content
+  background-color: $summary-content-background-color
+  padding: $summary-content-padding
+
+
+// 文章正文标题变量
+// 文章正文图片变量
+// 文章正文引用变量

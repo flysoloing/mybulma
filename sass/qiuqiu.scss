@@ -1,0 +1,125 @@
+// 0、参考资料
+// --> 确定字体，可以参考以下网址：
+//     --> https://blog.mutoo.im/2020/02/fonts-for-my-blog-theme/
+// --> 确定主色调，可以参考以下网址：
+//     --> http://www.materialpalette.com/
+//     --> http://flatuicolors.com/
+//     --> http://www.materialui.co/colors
+//     --> 我的微博收藏配合，选一个，如：
+//         --> 黄色：#EDDA8A
+//         --> 浅紫色：#A9A8C2
+//         --> 绿色：#02865B, RGB(2,134,91)
+//         --> 棕红色：#994B42
+//         --> 褐色：#4E3227
+
+// 1、设置编码格式
+@charset "utf-8";
+
+// 2、自定义变量
+$dunhuang: #02865B;
+$pink: #FA7C91;
+
+// 2.1、主品牌色
+$brand-color: $dunhuang;
+// $brand-color: $pink;
+
+// 3、设置初始变量
+// 3.1、设置主题颜色变量
+// --> 橙色
+// $orange:
+// --> 黄色
+// $yellow: #EDDA8A;
+// --> 绿色
+// $green:
+// --> 绿松石色，换成自定义的主题色
+$turquoise: $brand-color;
+// --> 青色
+// $cyan: #02865B;
+// --> 蓝色
+// $blue:
+// --> 紫色
+// $purple: #A9A8C2;
+// --> 红色
+// $red:
+
+// 3.2、设置字体变量
+// Import a Google Font
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+// $family-sans-serif: "Nunito", sans-serif;
+
+// 3.3、设置响应式布局变量
+$gap: 32px;
+$desktop: 720px + (2 * $gap);
+$widescreen: 720px + (2 * $gap);
+$fullhd: 720px + (2 * $gap);
+
+// 4、设置衍生变量
+// 4.1、设置主要颜色
+$primary: $brand-color;
+// $info:
+// $success:
+// $warning:
+// $danger:
+// 4.2、设置链接颜色
+$link: $brand-color;
+$link-focus-border: $brand-color;
+
+
+// 5、设置元素或组件变量，本次使用到的元素或组件有：navbar,a,footer,control,tag,ul,li,span,pagination,media
+// 5.1、设置content变量
+$content-blockquote-border-left-color: $brand-color;
+$content-blockquote-border-left: 5px solid $content-blockquote-border-left-color !default;
+
+// 6、引入所需的.sass文件
+@import "../bulma-0.9.2/sass/utilities/_all.sass";
+@import "../bulma-0.9.2/sass/base/_all.sass";
+
+@import "../bulma-0.9.2/sass/components/_all.sass";
+// @import "../bulma-0.9.2/sass/components/menu.sass";
+// @import "../bulma-0.9.2/sass/components/navbar.sass";
+// @import "../bulma-0.9.2/sass/components/pagination.sass";
+// @import "../bulma-0.9.2/sass/components/post.sass";
+
+@import "../bulma-0.9.2/sass/elements/_all.sass";
+// @import "../bulma-0.9.2/sass/elements/button.sass";
+// @import "../bulma-0.9.2/sass/elements/content.sass";
+// @import "../bulma-0.9.2/sass/elements/container.sass";
+// @import "../bulma-0.9.2/sass/elements/title.sass";
+
+@import "../bulma-0.9.2/sass/form/_all.sass";
+
+@import "../bulma-0.9.2/sass/grid/_all.sass";
+
+@import "../bulma-0.9.2/sass/helpers/_all.sass";
+
+@import "../bulma-0.9.2/sass/layout/_all.sass";
+// @import "../bulma-0.9.2/sass/layout/footer.sass";
+// @import "../bulma-0.9.2/sass/layout/hero.sass";
+// @import "../bulma-0.9.2/sass/layout/section.sass";
+
+// 7、已修改的文件及修改点，统计如下：
+// --> /utilities/initial-variables.sass
+//     --> $desktop, $widescreen, $fullhd 宽度改为720px
+//     -->
+//     -->
+// --> /utilities/derived-variables.sass
+//     --> 将$link-visited改为$cyan
+//     -->
+// --> /components/navbar.sass
+//     --> $navbar-height 改为6.5rem
+//     --> 将部分min-height改为$navbar-height/2
+//     --> 将+hamburger参数改为$navbar-height/2
+//     --> 将has-navbar-fixed-top参数改为$navbar-height/2
+//     --> 将has-navbar-fixed-bottom参数改为$navbar-height/2
+//     -->
+// --> /elements/content.sass
+//     --> 将$content-blockquote-border-left中的$border改为$cyan
+//     -->
+//     -->
+// --> /elements/title.sass
+//     --> 在.title下面增加<a>标签的颜色设定，与一般<a>标签相反
+//     -->
+// --> /elements/tag.sass
+//     --> 在.tag样式下面增加is-outlined样式，参考自button（貌似没啥用，除非是类似button这种带有边框的元素标签）
+//     -->
+//     -->

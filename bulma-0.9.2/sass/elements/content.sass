@@ -44,6 +44,11 @@ $content-table-foot-cell-color: $text-strong !default
     color: $content-heading-color
     font-weight: $content-heading-weight
     line-height: $content-heading-line-height
+  // 针对p下面包含img的情况做居中处理，参考figure
+  p > img
+    // display: inline-block
+    display: block
+    margin: 0 auto
   h1
     font-size: 2em
     margin-bottom: 0.5em

@@ -114,7 +114,7 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 //     -->
 // --> /elements/content.sass
 //     --> 将$content-blockquote-border-left中的$border改为$cyan
-//     -->
+//     --> 在.content的<p>标签下面增加<img>标签的样式，参考<figure>标签
 //     -->
 // --> /elements/title.sass
 //     --> 在.title下面增加<a>标签的颜色设定，与一般<a>标签相反

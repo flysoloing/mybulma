@@ -81,21 +81,10 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 // @import "../bulma-0.9.2/sass/components/post.sass";
 
 @import "../bulma-0.9.2/sass/elements/_all.sass";
-// @import "../bulma-0.9.2/sass/elements/button.sass";
-// @import "../bulma-0.9.2/sass/elements/content.sass";
-// @import "../bulma-0.9.2/sass/elements/container.sass";
-// @import "../bulma-0.9.2/sass/elements/title.sass";
-
 @import "../bulma-0.9.2/sass/form/_all.sass";
-
 @import "../bulma-0.9.2/sass/grid/_all.sass";
-
 @import "../bulma-0.9.2/sass/helpers/_all.sass";
-
 @import "../bulma-0.9.2/sass/layout/_all.sass";
-// @import "../bulma-0.9.2/sass/layout/footer.sass";
-// @import "../bulma-0.9.2/sass/layout/hero.sass";
-// @import "../bulma-0.9.2/sass/layout/section.sass";
 
 // 7、已修改的文件及修改点，统计如下：
 // --> /utilities/initial-variables.sass
@@ -121,5 +110,9 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 //     -->
 // --> /elements/tag.sass
 //     --> 在.tag样式下面增加is-outlined样式，参考自button（貌似没啥用，除非是类似button这种带有边框的元素标签）
+//     -->
+//     -->
+// --> /base/generic.sass
+//     --> 增加sticky footer支持，兼容不同浏览器和PC/移动设备
 //     -->
 //     -->

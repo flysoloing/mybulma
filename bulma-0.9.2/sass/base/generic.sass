@@ -70,6 +70,17 @@ body
   font-size: $body-font-size
   font-weight: $body-weight
   line-height: $body-line-height
+  // 为了支持sticky footer，增加body设置
+  display: flex
+  min-height: calc(100vh - 6.5rem)
+  flex-direction: column
+  // 如果是移动设备，应改为calc(100vh - 3.25rem)
+  +mobile
+    min-height: calc(100vh - 3.25rem)
+
+// 为了支持sticky footer，增加一个固定wrapper样式
+#wrapper
+  flex: 1
 
 // Inline
 

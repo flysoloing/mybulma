@@ -18,29 +18,31 @@
 // 2、自定义变量
 $dunhuang: #02865B;
 $pink: #FA7C91;
+$taptap: #15C5CE;
 
 // 2.1、主品牌色
-$brand-color: $dunhuang;
+// $brand-color: $dunhuang;
 // $brand-color: $pink;
+$brand-color: $taptap;
 
 // 3、设置初始变量
 // 3.1、设置主题颜色变量
+// --> 红色，覆盆子红（158/46/36）
+// $red: #9E2E24;
 // --> 橙色
 // $orange:
-// --> 黄色
-// $yellow: #EDDA8A;
-// --> 绿色
-// $green:
-// --> 绿松石色，换成自定义的主题色
-$turquoise: $brand-color;
-// --> 青色
-// $cyan: #02865B;
-// --> 蓝色
-// $blue:
-// --> 紫色
-// $purple: #A9A8C2;
-// --> 红色
-// $red:
+// --> 黄色，虎皮黄（226/175/66）
+// $yellow: #E2AF42;
+// --> 绿色，竹绿（79/164/133）
+// $green: #4FA485;
+// --> 绿松石色，石青（30/127/160）
+// $turquoise: #1E7FA0;
+// --> 青色，鸢尾蓝（65/138/180）
+// $cyan: #418AB4;
+// --> 蓝色，卡布里蓝（26/85/153）
+// $blue: #1A5599;
+// --> 紫色，苋菜紫（142/41/97）
+// $purple: #8E2961;
 
 // 3.2、设置字体变量
 // Import a Google Font
@@ -112,7 +114,15 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 //     --> 在.tag样式下面增加is-outlined样式，参考自button（貌似没啥用，除非是类似button这种带有边框的元素标签）
 //     -->
 //     -->
+// --> /elements/icon.sass
+//     --> 设置icon颜色为主题色
+//     -->
+//     -->
 // --> /base/generic.sass
 //     --> 增加sticky footer支持，兼容不同浏览器和PC/移动设备
+//     -->
+//     -->
+// --> /layout/footer.sass
+//     --> 修改footer标签的padding设置，从6rem改为3rem
 //     -->
 //     -->

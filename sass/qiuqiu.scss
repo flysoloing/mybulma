@@ -76,17 +76,54 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 @import "../bulma-0.9.2/sass/utilities/_all.sass";
 @import "../bulma-0.9.2/sass/base/_all.sass";
 
-@import "../bulma-0.9.2/sass/components/_all.sass";
+// TODO 组件定制化导入
+// @import "../bulma-0.9.2/sass/components/_all.sass";
+// @import "../bulma-0.9.2/sass/components/breadcrumb.sass";
+// @import "../bulma-0.9.2/sass/components/card.sass";
+// @import "../bulma-0.9.2/sass/components/dropdown.sass";
+// @import "../bulma-0.9.2/sass/components/level.sass";
+// @import "../bulma-0.9.2/sass/components/media.sass";
 // @import "../bulma-0.9.2/sass/components/menu.sass";
-// @import "../bulma-0.9.2/sass/components/navbar.sass";
-// @import "../bulma-0.9.2/sass/components/pagination.sass";
-// @import "../bulma-0.9.2/sass/components/post.sass";
+// @import "../bulma-0.9.2/sass/components/message.sass";
+// @import "../bulma-0.9.2/sass/components/modal.sass";
+@import "../bulma-0.9.2/sass/components/navbar.sass";
+@import "../bulma-0.9.2/sass/components/pagination.sass";
+// @import "../bulma-0.9.2/sass/components/panel.sass";
+// @import "../bulma-0.9.2/sass/components/tabs.sass";
 
-@import "../bulma-0.9.2/sass/elements/_all.sass";
-@import "../bulma-0.9.2/sass/form/_all.sass";
+// TODO 元素定制化导入
+// @import "../bulma-0.9.2/sass/elements/_all.sass";
+// @import "../bulma-0.9.2/sass/elements/box.sass";
+// @import "../bulma-0.9.2/sass/elements/button.sass";
+@import "../bulma-0.9.2/sass/elements/container.sass";
+@import "../bulma-0.9.2/sass/elements/content.sass";
+// @import "../bulma-0.9.2/sass/elements/form.sass";
+@import "../bulma-0.9.2/sass/elements/icon.sass";
+@import "../bulma-0.9.2/sass/elements/image.sass";
+// @import "../bulma-0.9.2/sass/elements/notification.sass";
+@import "../bulma-0.9.2/sass/elements/other.sass";
+// @import "../bulma-0.9.2/sass/elements/progress.sass";
+// @import "../bulma-0.9.2/sass/elements/table.sass";
+@import "../bulma-0.9.2/sass/elements/tag.sass";
+@import "../bulma-0.9.2/sass/elements/title.sass";
+
+// TODO 表单定制化导入
+// @import "../bulma-0.9.2/sass/form/_all.sass";
+// @import "../bulma-0.9.2/sass/form/checkbox-radio.sass";
+// @import "../bulma-0.9.2/sass/form/file.sass";
+// @import "../bulma-0.9.2/sass/form/input-textarea.sass";
+// @import "../bulma-0.9.2/sass/form/select.sass";
+@import "../bulma-0.9.2/sass/form/shared.sass";
+@import "../bulma-0.9.2/sass/form/tools.sass";
+
 @import "../bulma-0.9.2/sass/grid/_all.sass";
 @import "../bulma-0.9.2/sass/helpers/_all.sass";
-@import "../bulma-0.9.2/sass/layout/_all.sass";
+
+// TODO 布局定制化导入
+// @import "../bulma-0.9.2/sass/layout/_all.sass";
+@import "../bulma-0.9.2/sass/layout/footer.sass";
+// @import "../bulma-0.9.2/sass/layout/hero.sass";
+@import "../bulma-0.9.2/sass/layout/section.sass";
 
 // 7、已修改的文件及修改点，统计如下：
 // --> /utilities/initial-variables.sass

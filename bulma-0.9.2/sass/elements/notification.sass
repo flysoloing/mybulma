@@ -7,6 +7,9 @@ $notification-padding: 1.25rem 2.5rem 1.25rem 1.5rem !default
 $notification-padding-ltr: 1.25rem 2.5rem 1.25rem 1.5rem !default
 $notification-padding-rtl: 1.25rem 1.5rem 1.25rem 2.5rem !default
 
+//增加无填充模式的通知类型，另外考虑参考button的is-outlined实现边框样式
+$notification-no-padding: 0rem 0rem 0rem 0rem !default
+
 $notification-colors: $colors !default
 
 .notification
@@ -40,6 +43,22 @@ $notification-colors: $colors !default
   @each $name, $pair in $notification-colors
     $color: nth($pair, 1)
     $color-invert: nth($pair, 2)
+    // 增加无填充模式
+    &.is-no-padding
+      +ltr
+        padding: $notification-no-padding
+      +rtl
+        padding: $notification-no-padding
+      &.is-#{$name}
+        background-color: $color
+        color: $color-invert
+        // If light and dark colors are provided
+        @if length($pair) >= 4
+          $color-light: nth($pair, 3)
+          $color-dark: nth($pair, 4)
+          &.is-light
+            background-color: $color-light
+            color: $color-dark
     &.is-#{$name}
       background-color: $color
       color: $color-invert

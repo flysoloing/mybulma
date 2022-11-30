@@ -100,7 +100,7 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 // @import "../bulma-0.9.2/sass/elements/form.sass";
 @import "../bulma-0.9.2/sass/elements/icon.sass";
 @import "../bulma-0.9.2/sass/elements/image.sass";
-// @import "../bulma-0.9.2/sass/elements/notification.sass";
+@import "../bulma-0.9.2/sass/elements/notification.sass";
 @import "../bulma-0.9.2/sass/elements/other.sass";
 // @import "../bulma-0.9.2/sass/elements/progress.sass";
 // @import "../bulma-0.9.2/sass/elements/table.sass";
@@ -161,5 +161,9 @@ $content-blockquote-border-left: 5px solid $content-blockquote-border-left-color
 //     -->
 // --> /layout/footer.sass
 //     --> 修改footer标签的padding设置，从6rem改为3rem
+//     -->
+//     -->
+// --> /elements/notification.sass
+//     --> 增加无填充模式的通知类型，class为.is-no-padding
 //     -->
 //     -->

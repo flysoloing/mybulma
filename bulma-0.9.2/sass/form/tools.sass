@@ -108,6 +108,9 @@ $label-colors: $form-colors !default
       justify-content: flex-end
     &.is-grouped-multiline
       flex-wrap: wrap
+      // 增加多行水平居中展示样式
+      &.is-grouped-multiline-centered
+        align-items: center
       & > .control
         &:last-child,
         &:not(:last-child)

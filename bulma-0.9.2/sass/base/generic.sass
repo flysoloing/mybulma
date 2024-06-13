@@ -154,3 +154,35 @@ table
       text-align: inherit
   th
     color: $text-strong
+
+// 自定义样式，resume相关
+.profile
+  // 匹配mobile设备时，文本居中，元素居中
+  +mobile
+    text-align: center
+
+.contact
+  +tablet
+    text-align: right
+  // 匹配desktop设备时，文本居中，元素居中
+  +desktop
+    text-align: right
+
+// .hr
+  // border-bottom: 10px solid $primary
+  // margin: 0 1.5rem
+
+.summary,
+.experiences,
+.educations,
+.projects,
+.skills,
+.languages,
+.awards,
+.achievements,
+.presentations,
+.certificates
+  @extend %block
+  .title
+    padding: 0.5rem 0
+    border-bottom: 1px solid $primary
